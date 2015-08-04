@@ -1,8 +1,8 @@
 {
-  "name": "ng-bs-daterangepicker",
+  "name": "lfz-bootstrap-daterangepicker",
   "description": "AngularJS directive for bootstrap-daterangepicker",
   "version": "0.0.5",
-  "main": "./src/ng-bs-daterangepicker.js",
+  "main": "./src/lfz-bootstrap-daterangepicker.js",
   "dependencies": {
     "jquery": "latest",
     "angular": ">= 1.0.7",

@@ -2,7 +2,7 @@ describe('the daterange directive', function() {
 
 	var $ngCompile, $ngRootScope;
 
-	beforeEach(module('ngBootstrap'));
+	beforeEach(module('lfzBootstrapDaterangepicker'));
 
 	beforeEach(inject(function($compile, $rootScope) {
 		$ngCompile = $compile;

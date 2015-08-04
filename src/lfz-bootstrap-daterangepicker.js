@@ -1,6 +1,6 @@
 /**
- * @license ng-bs-daterangepicker v0.0.5
- * (c) 2013 Luis Farzati http://github.com/luisfarzati/ng-bs-daterangepicker
+ * @license lfz-bootstrap-daterangepicker v0.0.5
+ * (c) 2013 Luis Farzati http://github.com/luisfarzati/lfz-bootstrap-daterangepicker
  * License: MIT
  */
 (function(angular) {
@@ -8,14 +8,14 @@
 	'use strict';
 
 	angular
-		.module('ngBootstrap', [])
-		.directive('input', ['$compile', '$parse', '$filter', function($compile, $parse, $filter) {
+		.module('lfzBootstrapDaterangepicker', [])
+		.directive('lfzBootstrapDaterangepicker', ['$compile', '$parse', '$filter', function($compile, $parse, $filter) {
 			return {
-				restrict: 'E',
+				restrict: 'AE',
 				require: '?ngModel',
 				link: function($scope, $element, $attributes, ngModel) {
 
-					if ($attributes.type !== 'daterange' || ngModel === null) {
+					if (ngModel === null) {
 						return;
 					}
 
