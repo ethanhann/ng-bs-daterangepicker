@@ -3,7 +3,7 @@ lfz-bootstrap-daterangepicker
 
 Angular directive for Dan Grossman's [bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker).
 
-Demo: http://luisfarzati.github.io/ng-bs-daterangepicker
+Demo: http://luisfarzati.github.io/lfz-bootstrap-daterangepicker
 
 Installation
 ---
@@ -73,7 +73,7 @@ Example with all above features:
 
 ```html
 <input
-	type="daterange"
+	lfz-bootstrap-daterangepicker
 	ng-model="dates"
 	min-date="2013-09-10"
 	max-date="2013-09-25"
@@ -105,4 +105,4 @@ assuming you already have `grunt` installed, otherwise you also need to do:
 npm install -g grunt-cli
 ```
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/luisfarzati/ng-bs-daterangepicker/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/luisfarzati/lfz-bootstrap-daterangepicker/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
