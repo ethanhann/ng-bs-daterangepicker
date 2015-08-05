@@ -14,40 +14,52 @@
 
 		<div ng-app="demo" ng-controller="SampleCtrl" class="container">
 			<h2>Attribute Examples</h2>
-			<div>
-				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates1"&gt; <span>{{</span>dates1|json}}</pre>
-				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates1"> <code>{{dates1|json}}</code>
+
+			<div class="well">
+                <p>dates1 = <code>{{dates1|json}}</code></p>
+				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates1"&gt;</pre>
+				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates1">
 			</div>
-			<hr>
-			<div>
-				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates2" format="MMM DD" separator="/"&gt; <span>{{</span>dates2|json}}</pre>
-				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates2" format="MMM DD" separator="/"> <code>{{dates2|json}}</code>
+			<div class="well">
+                <p>dates2 = <code>{{dates2|json}}</code></p>
+				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates2" format="MMM DD" separator="/"&gt;</pre>
+				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates2" format="MMM DD" separator="/">
 			</div>
-			<hr>
-			<div>
-				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates3" separator="/" min-date="2013-09-10" max-date="2013-09-20" limit="1 day"&gt; <span>{{</span>dates3|json}}</pre>
-				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates3" separator="/" min-date="2013-09-10" max-date="2013-09-20" limit="1 day" > <code>{{dates3|json}}</code>
+			<div class="well">
+                <p>dates3 = <code>{{dates3|json}}</code></p>
+				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates3" separator="/" min-date="2013-09-10" max-date="2013-09-20" limit="1 day"&gt;</pre>
+				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates3" separator="/" min-date="2013-09-10" max-date="2013-09-20" limit="1 day">
 			</div>
-			<hr>
-			<div>
-				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates4" ranges="ranges"&gt; <span>{{</span>dates4|json}}</pre>
-				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates4" ranges="ranges"> <code>{{dates4|json}}</code>
+			<div class="well">
+                <p>dates4 = <code>{{dates4|json}}</code></p>
+				<pre>&lt;input lfz-bootstrap-daterangepicker type="text" ng-model="dates4" ranges="ranges"&gt;</pre>
+				<input lfz-bootstrap-daterangepicker type="text" ng-model="dates4" ranges="ranges">
 			</div>
 
 			<h2>Element Example</h2>
-			<div>
-				<pre>&lt;lfz-bootstrap-daterangepicker type="text" ng-model="dates1"&gt;&lt;/lfz-bootstrap-daterangepicker&gt; <span>{{</span>dates5|json}}</pre>
+			<div class="well">
+                <p>dates5 = <code>{{dates5|json}}</code></p>
+				<pre>
+&lt;lfz-bootstrap-daterangepicker type="text" ng-model="dates1"&gt;
+    <span>{{ </span>dates5.startDate.format()|date : 'short' }} to <span>{{ </span> dates5.endDate.format()|date : 'short' }}
+&lt;/lfz-bootstrap-daterangepicker&gt;
+                </pre>
 				<lfz-bootstrap-daterangepicker type="text" ng-model="dates5">
-					{{ dates5.startDate.format()|date : 'short' }} to {{ dates5.endDate.format()|date : 'short' }}
-				</lfz-bootstrap-daterangepicker> <code>{{dates5|json}}</code>
+                    {{dates5.startDate.format()|date : 'short' }} to {{ dates5.endDate.format()|date : 'short' }}
+				</lfz-bootstrap-daterangepicker>
 			</div>
 
 			<h2>Button Example</h2>
-			<div>
-				<pre>&lt;lfz-bootstrap-daterangepicker type="text" ng-model="dates1"&gt;&lt;/lfz-bootstrap-daterangepicker&gt; <span>{{</span>dates6|json}}</pre>
+			<div class="well">
+                <p>dates6 = <code>{{dates6|json}}</code></p>
+				<pre>
+&lt;lfz-bootstrap-daterangepicker type="text" ng-model="dates1"&gt;
+    <span>{{ </span>dates6.startDate.format()|date : 'short' }} to <span>{{ </span> dates6.endDate.format()|date : 'short' }}
+&lt;/lfz-bootstrap-daterangepicker&gt; <span>{{</span>dates6|json}}
+                </pre>
 				<button class="btn btn-primary" type="text" lfz-bootstrap-daterangepicker ng-model="dates1">
 					{{ dates6.startDate.format()|date : 'short' }} to {{ dates6.endDate.format()|date : 'short' }}
-				</button> <code>{{dates6|json}}</code>
+				</button>
 			</div>
 		</div>
 
